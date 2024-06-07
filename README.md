@@ -68,3 +68,44 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# React Application in Docker
+
+This is a simple React application that displays a `<h1>` tag with the text "Codin 1". The application is containerized using Docker.
+
+## Prerequisites
+
+- Docker Desktop
+
+## Instructions
+
+1. Clone the repository and navigate to the project directory.
+
+2. Build the Docker image:
+
+    ```sh
+    docker build -t deluz_kyle_coding_assignment11 .
+    ```
+
+3. Run the Docker container:
+
+    ```sh
+    docker run -p 7775:7775 --name deluz_kyle_coding_assignment11 deluz_kyle_coding_assignment11
+    ```
+
+4. Open your web browser and navigate to [http://127.0.0.1:7775](http://127.0.0.1:7775) to see the application running.
+
+## Directory Structure
+
+/codin-website
+|-- Dockerfile
+|-- README.md
+|-- node_modules
+|-- package.json
+|-- package-lock.json
+|-- public
+| |-- index.html
+|-- src
+| |-- App.js
+| |-- App.css
+| |-- index.js
